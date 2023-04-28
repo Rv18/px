@@ -1,66 +1,134 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-         <title>Login </title>
-         <link rel="stylesheet" href="Homepage.css">
-         <script src="Jav.js"></script>
-         <style>
-           body { opacity: 100%;
-    /*background-image: url(/Users/vrinton/Desktop/BCimageGainsight.png);
+<head>
+  <meta charset="UTF-8">
+  <title>Login </title>
+  <link rel="stylesheet" href="Homepage.css">
+  <script src="Jav.js"></script>
+  <script src="products.js"></script>
+  <style>
+    body {
+      opacity: 100%;
+      /*background-image: url(/Users/vrinton/Desktop/BCimageGainsight.png);
     
     width: 100%;*/
-  background-image: url('images/GSIMAGE.png');
-background-blend-mode: luminosity;
-  background-position: 700px;
-  
-}
-            </style>
-      
-         
-    </head>
-        
-          
-           <body>
+      background-image: url('images/GSIMAGE.png');
+      background-blend-mode: luminosity;
+      background-position: 700px;
 
-        <div id="container">
-            <image id="image" src="images/gainsight-px.webp" alt="Image not found"></image>
+    }
+  </style>
 
-        </div>
-        <body>
-        
-            <div id="picture-css">
-            </div>
-        
-            
-            <nav class="menu">
-           
-                <a href="About Us.html">About Us</a> &nbsp;&nbsp;&nbsp;
-                <a href="Products.html">Products</a> &nbsp;&nbsp;&nbsp;
-               
-                <a href="Widget.html">Services</a> &nbsp;&nbsp;&nbsp;
-                <a href="Contact.html">Contact</a> &nbsp;&nbsp;&nbsp;
-                <a href="index.html">Logout</a> &nbsp;&nbsp;&nbsp;
-                
-            </nav>
-            <header class="header">Products</header>
-            <button class="Button_class2" onclick="addtocart()" style="
+
+</head>
+
+
+<body>
+
+  <Box id="container">
+    <image id="image" src="images/gainsight-px.webp" alt="Image not found"></image>
+
+  </Box>
+
+  <body>
+
+    <Box id="picture-css">
+    </Box>
+
+
+    <nav class="menu">
+
+      <a href="About Us.html">About Us</a> &nbsp;&nbsp;&nbsp;
+      <a href="Products.html">Products</a> &nbsp;&nbsp;&nbsp;
+
+      <a href="Widget.html">Services</a> &nbsp;&nbsp;&nbsp;
+      <a href="Contact.html">Contact</a> &nbsp;&nbsp;&nbsp;
+      <a href="index.html">Logout</a> &nbsp;&nbsp;&nbsp;
+
+    </nav>
+    <header class="header">Products</header>
+    <button class="Button_class2" onclick="addtocart()" style="
             padding: 5px 5px 5px 5px;
-            margin-left: 700px";>Add to cart</button>
-           <p style="text-align: center; padding: 20px 10px 40px 930px;
+            margin-left: 700px" ;>Add to cart</button>
+    <p style="text-align: center; padding: 20px 10px 40px 930px;
            font-size: x-large;
            font-style: oblique;
            font-weight: bolder;
            padding: 200px 100px 100px 100px;
            color: darkgoldenrod;
            font-stretch: expanded;">Gainsight CS <br> Gainsight PX</p>
-           
-           <footer>
-            &copy; Demo for PX Web app <hr>Created by RV
-        </footer>
 
-        </div>
-        
-        </body>
-        </html>
+    <style>
+      .dragabble {
+        position: absolute;
+        z-index: 9;
+        background-color: #f1f1f1;
+        text-align: center;
+        border: 1px solid #d3d3d3;
+      }
+
+      .red-box {
+        margin-right: 100px;
+        background-color: #b72e2e;
+      }
+
+      .green-box {
+        margin-right: 200px;
+        background-color: #2757d1;
+      }
+
+      #myBoxheader {
+        padding: 10px;
+        cursor: move;
+        z-index: 10;
+        background-color: #2196F3;
+        color: #fff;
+      }
+    </style>
+
+    <body>
+
+      <h1>Draggable Boxes Element</h1>
+
+      <p>Click and hold the mouse button down while moving the Box element</p>
+
+      <Box id="myBox" class="dragabble">
+        <Box id="myBoxheader">Click here to move</Box>
+        <p>Move</p>
+        <p>this</p>
+        <p>Box</p>
+      </Box>
+      <Box id="myBox1" class="dragabble red-box">
+        <Box id="myBoxheader">Click here to move</Box>
+        <p>Move</p>
+        <p>this</p>
+        <p>Box</p>
+      </Box>
+      <Box id="myBox2" class="dragabble green-box">
+        <Box id="myBoxheader">Click here to move</Box>
+        <p>Move</p>
+        <p>this</p>
+        <p>Box</p>
+      </Box>
+
+      <script>
+        //Make the Box element draggagle:
+        dragElement(document.getElementById("myBox"));
+        dragElement(document.getElementById("myBox1"));
+        dragElement(document.getElementById("myBox2"));
+      </script>
+      </script>
+
+      </script>
+
+      <footer>
+        &copy; Demo for PX Web app
+        <hr>Created by RV
+      </footer>
+
+      </Box>
+
+    </body>
+
+</html>
