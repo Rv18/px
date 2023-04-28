@@ -1,0 +1,60 @@
+p1 { 
+    font-style: oblique;
+    color: aqua;
+    font-weight: bold;
+    font-size:20px;
+    
+
+}
+
+h1{
+
+display: block;
+font-size: 7em;
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif ;
+color:blue;
+border: 2px solid white;
+border-radius: 25px
+  outline: #4CAF50 solid 10px;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+}
+
+.para1 {
+    background: scroll;
+}
+
+#Loginbutton{
+    cursor: pointer;
+    box-align: center;
+    padding: 6px 6px 6px;
+}
+#Loginform input{
+border-radius: 10px;
+height: 40px;
+background: whitesmoke;
+}
+.dragred
+{
+    width: 150px;
+     height: 150px;
+      padding: 0.5em;
+      background-color: red;
+}
+
+.dragblue
+{
+    width: 150px;
+     height: 150px;
+      padding: 0.5em;
+      background-color: blue;
+}
+.draggreen
+{
+    width: 150px;
+     height: 150px;
+      padding: 0.5em;
+      background-color: green;
+}

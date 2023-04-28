@@ -1,0 +1,55 @@
+#container {
+    text-align: center;
+    color: chocolate;
+  
+    /*height: 400px;*/
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50;
+   
+}
+
+#test {
+    text-align: center;
+    color: rgba(224, 151, 212, 0.449);
+    opacity: 20%;
+}
+#image {
+    width: 100%;
+   background-color: rgb(255, 255, 255);
+
+}
+
+body { opacity: 100%;
+    /*background-image: url(/Users/vrinton/Desktop/BCimageGainsight.png);
+    
+    width: 100%;*/
+  background-image: url('images/GSIMAGE.png');
+background-blend-mode: luminosity;
+  background-position: 700px;
+  
+}
+
+#Loginform {
+    margin: 0 auto;
+   
+}
+
+.headerlogin {
+    color: rgb(193, 134, 70);
+    font-size: larger;
+    font-weight: bolder;
+}
+
+div {
+    font-size: x-large;
+    color: darkorange;
+}
+
+.Button {
+    color: aquamarine;
+    size: 30px;
+    background-color: aquamarine;
+    margin-right: 700px;
+    padding: 5px 5px 5px 5px;
+}
